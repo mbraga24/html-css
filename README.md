@@ -2,7 +2,7 @@
 
 **The Box Model**
 
-_the four properties of the box model: height and width, padding, borders, and margins. Understanding the box model is an important step towards learning more advanced HTML and CSS topics._ 
+_The four properties of the box model: height and width, padding, borders, and margins. Understanding the box model is an important step towards learning more advanced HTML and CSS topics._ 
 
 1. The box model comprises a set of properties used to create space around and between HTML elements.
 2. The height and width of a content area can be set in pixels or percentage.
