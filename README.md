@@ -2,7 +2,7 @@
 
 ### All the the information below, as well as practice exercise and projects (code) shared in this repository were extracted from and made possible thanks to from [Code Academy](https://www.codecademy.com/)
 
-## The Box Model**
+## The Box Model
 
 _The four properties of the box model: height and width, padding, borders, and margins. Understanding the box model is an important step towards learning more advanced HTML and CSS topics._ 
 
