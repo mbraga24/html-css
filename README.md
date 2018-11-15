@@ -1,6 +1,6 @@
 # Practice-HTML-CSS
 
-### All the the information below, as well as practice exercise and projects (code) shared in this repository were extracted from and made possible thanks to from [Code Academy](https://www.codecademy.com/)
+#### All the the information below, as well as practice exercise and projects (code) shared in this repository were extracted from and made possible thanks to from [Code Academy](https://www.codecademy.com/)
 
 ## The Box Model
 
