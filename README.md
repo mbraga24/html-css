@@ -1,6 +1,6 @@
 # Practice-HTML-CSS
 
-**The Box Model**
+## The Box Model**
 
 _The four properties of the box model: height and width, padding, borders, and margins. Understanding the box model is an important step towards learning more advanced HTML and CSS topics._ 
 
@@ -16,10 +16,43 @@ _The four properties of the box model: height and width, padding, borders, and m
 10. The **_visibility_** property can hide or show elements.
 
 
-**Changing the Box Model**
+## Changing the Box Model
 
 1. In the default box model, box dimensions are affected by border thickness and padding.
 2. The **_box-sizing_** property controls the box model used by the browser.
 3. The default value of the **_box-sizing_** property is **_content-box_**.
 4. The value for the new box model is **_border-box_**.
 5. The border-box model is not affected by border thickness or padding.
+
+## Layout
+
+_How to control the positioning of elements on a web page._
+
+1.	The position property allows you to specify the position of an element in three different ways.
+2.	When set to relative, an element's position is relative to its default position on the page.
+3.	When set to absolute, an element's position is relative to its closest positioned parent element. It can be pinned to any part of the web page, but the element will still move with the rest of the document when the page is scrolled.
+4.	When set to fixed, an element's position can be pinned to any part of the web page. The element will remain in view no matter what.
+5.	The z-index of an element specifies how far back or how far forward an element appears on the page when it overlaps other elements.
+6.	The display property allows you control how an element flows vertically and horizontally a document.
+7.	inline elements take up as little space as possible, and they cannot have manually-adjusted width or height.
+8.	block elements take up the width of their container and can have manually-adjusted heights.
+9.	inline-block elements can have set widthand height, but they can also appear next to each other and do not take up their entire container width.
+10.	The float property can move elements as far left or as far right as possible on a web page.
+11.	You can clear an element's left or right side (or both) using the clear property.
+
+## Color
+
+_There are four ways to represent color in CSS:_
+
+-	Named colors — there are 147 named colors, which you can review here.
+- Hexadecimal or hex colors
+	- Hexadecimal is a number system with has sixteen digits, 0 to 9 followed by "A" to "F".
+  -	Hex values always begin with # and specify values of red, blue and green using hexademical numbers such as #23F41A.
+-	RGB
+  -	RGB colors use the rgb() syntax with one value for red, one value for blue and one value for green.
+  -	RGB values range from 0 to 255 and look like this: rgb(7, 210, 50).
+-	HSL
+  -	HSL stands for hue (the color itself), saturation (the intensity of the color), and lightness (how light or dark a color is).
+  -	Hue ranges from 0 to 360 and saturation and lightness are both represented as percentages like this: hsl(200, 20%, 50%).
+-	You can add opacity to color in RGB and HSL by adding a fourth value, a, which is represented as a percentage.
+
