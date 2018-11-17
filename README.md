@@ -88,3 +88,15 @@ _How to size elements on a website relative to other elements on the page._
 8.	The minimum and maximum height of elements can be set using min-height and max-height.
 9.	When the height of an image or video is set, then its width can be set to auto so that the media scales proportionally. Reversing these two properties and values will also achieve the same result.
 10.	A background image of an HTML element will scale proportionally when its background-sizeproperty is set to cover.
+
+## Media Queries
+
+_How to change the way a website appears on different screens with media queries and breakpoints_
+
+1.	When a website responds to the size of the screen it's viewed on, it’s called a responsive website.
+2.	You can write media queries to help with different screen sizes.
+3.	Media queries require media features. Media features are the conditions that must be met to render the CSS within a media query.
+4.	Media features can detect many aspects of a user's browser, including the screen's width, height, resolution, orientation, and more.
+5.	The and operator requires multiple media features to be true at once.
+6.	A comma separated list of media features only requires one media feature to be true for the code within to be applied.
+7.	The best practice for identifying where media queries should be set is by resizing the browser to determine where the content naturally breaks. Natural breakpoints are found by resizing the browser.
