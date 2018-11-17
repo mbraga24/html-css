@@ -73,3 +73,18 @@ _Typography is an important aspect of the user experience._
 9.  The word-spacing property changes how far apart individual words are.
 10.	The letter-spacing property changes how far apart individual letters are.
 11.	The text-align property changes the horizontal alignment of text.
+
+## Relative Measurements
+
+_How to size elements on a website relative to other elements on the page._
+
+1.	Content on a website can be sized relative to other elements on the page using relative measurements.
+2.	The unit of em sizes font relative to the font size of a parent element.
+3.	The unit of rem sizes font relative to the font size of a root element. That root element is the <html> element.
+4.  Percentages are commonly used to size box-model features, like the width, height, padding, or margin of an element.
+5.	When percentages are used to size width and height, child elements will be sized relative to the dimensions of their parent (remember that parent dimensions must first be set).
+6.	Percentages can be used to set padding and margin. Horizontal and vertical padding and margin are set relative to the width of a parent element.
+7.	The minimum and maximum width of elements can be set using min-width and max-width.
+8.	The minimum and maximum height of elements can be set using min-height and max-height.
+9.	When the height of an image or video is set, then its width can be set to auto so that the media scales proportionally. Reversing these two properties and values will also achieve the same result.
+10.	A background image of an HTML element will scale proportionally when its background-sizeproperty is set to cover.
