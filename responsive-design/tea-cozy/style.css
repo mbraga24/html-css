@@ -1,0 +1,104 @@
+/* Global */
+
+* {
+margin: 0;
+padding: 0;
+}
+
+html, body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+  background-color: yellow;
+  color: black;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  z-index: 10;
+  height: 69px;
+  width: 100%
+
+}
+
+li {
+  display: inline-block;
+  float: right;
+  margin: 20px 15px;
+  text-decoration: underline;
+}
+
+p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.banner {
+  position: relative;
+  height: 700px;
+  width: 1200px;
+  background: url("img-mission-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  top: 70px;
+  margin: 0 auto;
+}
+.ribon-msg {
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  background-color: black;
+  padding: 15px 0 15px 0;
+  color: hsl(283 100% 99%);
+}
+
+/* Especials */
+
+.especials {
+  position: relative;
+  top: 80px;
+  margin-top: 70px;
+}
+
+span {
+  text-align: center;
+}
+
+span h2 {
+  margin-bottom: 20px;
+}
+
+span h4 {
+  margin-bottom: 10px;
+}
+
+.especials .items {
+  text-align: center;
+  display: inline-block;
+  width: 350px;
+  height: 100px;
+}
+
+img {
+  height: 200px;
+  width: 300px;
+  margin-top: 20px;
+}
+
+/* Footer */
+
+footer {
+  position: relative;
+  border: 1px solid white;
+  top: 70px;
+  height: 200px;
+}
