@@ -96,7 +96,7 @@ img {
 
 .locations {
   position: relative;
-  height: 500px;
+  height: 700px;
   width: 1200px;
   margin: 0 auto;
   top: 150px;
@@ -112,7 +112,27 @@ img {
 footer {
   background-color: hsl(0, 0%, 0%);
   position: relative;
-  border: 1px solid white;
+  border-top: 1px solid white;
   top: 150px;
   height: 200px;
+}
+
+footer span{
+  text-align: center;
+}
+
+footer span h1 {
+  padding: 10px 0;
+}
+
+footer span h1, h5 {
+  margin-bottom: 30px;
+}
+
+#copyright {
+  margin-top: 20px;
+  text-align: left;
+  top: 140px;
+  padding: 20px 0;
+  position: relative;
 }
