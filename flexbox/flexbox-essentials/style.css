@@ -22,17 +22,27 @@
   width: 50px;
 }
 
-/* flex-direction */
+/* flex-direction: row-reverse */
 
-.example-direction .parent {
+.example-direction-row-reverse .parent {
   display: flex;
   flex-direction: row-reverse;
 }
 
-.example-direction .item {
+.example-direction-row-reverse .item {
   width: 50px;
 }
 
+/* flex-direction: column-reverse */
+
+.example-direction-column-reverse .parent {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.example-direction-column-reverse .item {
+  width: 50px;
+}
 /* flex-wrap: wrap  */
 
 .example-wrap .parent {
