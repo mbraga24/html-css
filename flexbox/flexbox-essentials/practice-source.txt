@@ -1,0 +1,6 @@
+*Source of this practice exercise*
+
+CSS FlexBox Essentials
+https://www.youtube.com/watch?v=G7EIAgfkhmg
+
+I implemented more values of the properties given in the video for more practice.
