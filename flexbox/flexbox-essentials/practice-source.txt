@@ -3,4 +3,4 @@
 "CSS FlexBox Essentials"
 https://www.youtube.com/watch?v=G7EIAgfkhmg
 
-I implemented more values of the properties given in the tutorial for more practice.
+For more practice I implemented other values for the properties given in the tutorial.
