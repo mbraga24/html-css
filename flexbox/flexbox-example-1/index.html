@@ -5,34 +5,44 @@
     <link rel="stylesheet" href="style.css">
     <title></title>
   </head>
+  <body>
 
-<div class="example">
-  <h2>3 column layout</h2>
-  <div class="example-page example-layout">
-    <header> Header </header>
-    <body>
-      <div class="col-1"> Main Content </div>
-      <div class="col-2"> Navigation </div>
-      <div class="col-3"> Sidebar </div>
-    </body>
-    <footer> Footer </footer>
+  <div class="example-main">
+    <h2>3 Column Layout</h2>
+    <div class="example-page example-layout">
+      <header> Header </header>
+        <div class="body">
+          <div class="col-1"> <h4>Main Content</h4> </div>
+          <div class="col-2"> <h4>Navigation</h4> </div>
+          <div class="col-3"> <h4>Sidebar</h4></div>
+        </div>
+      <footer> Footer </footer>
+
+    </div>
   </div>
-</div>
-<div class="example">
-  <h2>Media Object</h2>
-  <div class="example-page example-layout">
-    <div class="media">
-      <img src="http://fillmurray.com/50/50" alt="">
-      <div class="content">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  </div>
+
+  <div class="example-media-object">
+    <h2>Media Object</h2>
+    <div class="example-page example-media">
+      <div class="media">
+        <img src="http://fillmurray.com/50/50" alt="">
+        <div class="content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </div>
+      </div>
+      <hr>
+      <div class="search-group">
+        <input type="text" placeholder="Search">
+        <!-- Had a little trouble styling the submit button.
+        I tried targeting using: ".example-media .search-group input[type=submit]"
+        in CSS but it didn't work. I also try targeting using the chrome dev tools,
+        but it has also shown to be ineffective. As I progress I will keep this issue
+        in mind and will return to fix it in the future. -->
+        <input type="submit" value="Submit">
       </div>
     </div>
-    <hr>
-    <div class="search-group">
-      <input type="text" placeholder="Search" name="" value="">
-      <input type="Submit">
-    </div>
   </div>
-</div>
 
+  </body>
 </html>
