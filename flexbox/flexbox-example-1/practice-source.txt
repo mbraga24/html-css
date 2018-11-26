@@ -1,0 +1,6 @@
+** Source of this practice exercise **
+
+"CSS FlexBox Practical Examples (Rebuilding Dribbble.com using FlexBox)"
+https://www.youtube.com/watch?v=H1lREysgdgc
+
+For more practice I implemented other values for the properties given in the tutorial.
