@@ -1,13 +1,13 @@
 /* 
-For browsers that still don't have grid start the layout without grid
-then inside a feature query (@supports statement) run a test that will
-check if the browser has grid, if it doesn't it will skip all that code.
+Layout for older browsers: 
+Start the layout without grid, then inside a feature query (@supports statement) 
+run a test that will check if the browser has grid, if it doesn't it will skip 
+all that code.
 
 -EXAMPLE BELOW-
 */
 
-// For the fallback layout
-
+// Simplified for older browsers
 main {
   max-width: 500px;
   margin: 0 auto;
@@ -17,6 +17,7 @@ article {
   margin: 1rem 0;
 }
 
+// Code for newer browser including overrides
 @supports (display: grid) {
   main {
     max-width: 10000px;
