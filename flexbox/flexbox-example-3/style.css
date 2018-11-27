@@ -1,0 +1,36 @@
+.gallery-links-h2 {
+  font-family: Catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery-links {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  /* flex-flow: row wrap; */
+}
+
+.gallery-img {
+  flex-basis: 90%;
+  margin: 10px;
+}
+
+.gallery-img img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 762px) {
+  .gallery-links-h2 {
+    font-size: 28px;
+  }
+
+  .gallery-img {
+    flex-basis: 300px;
+  }
+}
