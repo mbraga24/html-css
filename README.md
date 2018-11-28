@@ -1,6 +1,6 @@
 # HTML&CSS-Practice
 
-##About This Repository
+## About This Repository
 
 #### In this repository you will find practice exercise and projects from tutorials/courses I like to follow from the web.
 #### To check my personal practice projects, please check the "My-HTML&CSS-Wonderland" repository.
