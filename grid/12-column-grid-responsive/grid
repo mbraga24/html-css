@@ -1,3 +1,6 @@
+<p id="toggle-name">Enable Grid</p>
+    <input type="checkbox"/>
+
 <div id="grid">
   // Create the same number of columns previously created
   <p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
