@@ -1,7 +1,7 @@
 # Practice-HTML-CSS
 
-#### In this repository you will find practice exercise and projects from tutorials/courses I like to follow from the web
-#### For personal projects, please check the My-HTML/CSS-Wonderland repository.
+#### In this repository you will find practice exercise and projects from tutorials/courses I like to follow from the web.
+#### To check my personal practice projects, please check the "My-HTML/CSS-Wonderland" repository.
 
 #### _All the the information below, as well as some practice exercise and projects shared in this repository were extracted from_ [Code Academy](https://www.codecademy.com/)
 
