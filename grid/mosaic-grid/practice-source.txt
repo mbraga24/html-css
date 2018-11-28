@@ -1,0 +1,4 @@
+** Source of this practice exercise **
+
+"CSS Grid Tutorial #8 - Mosaic Layout"
+https://www.youtube.com/watch?v=WZOZUCHo1OM&list=PL4cUxeGkcC9itC4TxYMzFCfveyutyPOCY&index=8
