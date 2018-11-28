@@ -1,0 +1,5 @@
+
+** Source of this practice exercise **
+
+"CSS Grid Tutorial #7 - Create a 12-Column Grid"
+https://www.youtube.com/watch?v=WmwGpjg580o&list=PL4cUxeGkcC9itC4TxYMzFCfveyutyPOCY&index=7
