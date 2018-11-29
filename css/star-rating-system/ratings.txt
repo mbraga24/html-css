@@ -1,0 +1,61 @@
+  <div class="container">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>4K Television</th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="sony">
+          <td>Sony 4K TV</td>
+          <td>
+            <div class="starr-outer">
+              <div class="stars-inner"></div>
+            </div>
+            <span class="number-rating"></span>
+          </td>
+        </tr>
+      <tr class="samsumg">
+          <td>Samsumg 4K TV</td>
+          <td>
+            <div class="starr-outer">
+              <div class="stars-inner"></div>
+            </div>
+            <span class="number-rating"></span>
+          </td>
+        </tr>
+      <tr class="vizio">
+          <td>Vizio 4K TV</td>
+          <td>
+            <div class="starr-outer">
+              <div class="stars-inner"></div>
+            </div>
+            <span class="number-rating"></span>
+          </td>
+        </tr>
+        <tr class="panasonic">
+            <td>Panasonic 4K TV</td>
+            <td>
+              <div class="starr-outer">
+                <div class="stars-inner"></div>
+              </div>
+              <span class="number-rating"></span>
+            </td>
+          </tr>
+          <tr class="phillips">
+              <td>Phillips 4K TV</td>
+              <td>
+                <div class="starr-outer">
+                  <div class="stars-inner"></div>
+                </div>
+                <span class="number-rating"></span>
+              </td>
+            </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+  
+  </script>
