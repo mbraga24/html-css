@@ -9,6 +9,7 @@ body {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-auto-rows: minmax(100px, auto);
+  grid-gap: 10px;
   max-width: 960px;
   margin: 0 auto;
   /* Position relative to display grid on top */
