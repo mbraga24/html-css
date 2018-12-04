@@ -1,2 +1,0 @@
-ul > li : parent (ul) and child (li) if you want to target the immediate decendent you use greater than ">"    
-cmd + / : Will comment out a whole selection
