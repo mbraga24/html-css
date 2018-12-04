@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(284, 100%, 99%);
+  padding: 0;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.one {
+  background: hsl(0, 100%, 80%);
+  height: 960px;
+  color: hsl(0, 0%, 0%);
+  font-size: 50px;
+  text-align: center;
+  line-height: 600px;
+}
+
+.two {
+  background: hsl(60, 90%, 80%);
+  height: 960px;
+  color: hsl(0, 0%, 0%);
+  font-size: 50px;
+  text-align: center;
+  line-height: 600px;
+}
+
+.three {
+  background: hsl(225, 83%, 80%);
+  height: 920px;
+  color: hsl(0, 0%, 0%);
+  font-size: 50px;
+  text-align: center;
+  line-height: 600px;
+}
+
+.container .box-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.container .one, .two, .three {
+  width: 100%;
+}
+
+/* Phones */
+@media only screen and (max-width: 425px) {
+  .container .box-container {
+    flex-direction: column;
+  }
+}
+
+/* Anything else in between between */
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+  .container .box-container {
+    flex-direction: column;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container .box-container {
+    flex-direction: column;
+  }
+}
