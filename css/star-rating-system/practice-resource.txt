@@ -1,0 +1,5 @@
+
+** Source of this practice exercise **
+
+"Pure CSS Star Rating Widget - How To Create a Simple Star Rating with Html and CSS - No Javascipt"
+https://www.youtube.com/watch?v=Ep78KjstQuw
