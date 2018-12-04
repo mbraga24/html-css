@@ -33,12 +33,12 @@ header, footer {
 }
 .body .col-2 {
   background-color: hsl(91, 85%, 60%);
-  width: 160px;
+  width: 15vw;
   order: -1;
 }
 .body .col-3 {
   background-color: hsl(225, 90%, 90%);
-  width: 160px;
+  width: 15vw;
 }
 
 @media only screen and (max-width: 600px) {
