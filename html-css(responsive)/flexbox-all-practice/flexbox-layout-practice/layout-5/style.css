@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: hsl(284, 100%, 99%);
+  font-family: 'Nunito Semibold';
+  font-size: 40px;
+  line-height: 600px;
+  text-align: center;
+}
+
+.one {
+  background: hsl(225, 83%, 85%);
+  height: 660px;
+  width: 300px;
+}
+
+.two {
+  background: hsl(60, 100%, 85%);
+  height: 660px;
+  width: 300px;
+}
+
+.three {
+  background: hsl(0, 100%, 85%);
+  height: 660px;
+  width: 300px;
+}
+
+.main-container .box-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-container .one {
+  flex-grow: 2;
+  order: 1;
+}
+
+.main-container .two {
+  order: 0;
+}
+
+.main-container .three {
+  order: 1;
+}
+
+/* Phones */
+@media only screen and (max-width: 425px) {
+  .main-container .box-container {
+    flex-direction: column;
+  }
+
+  .main-container .one {
+    order: 1;
+    height: 100vh;
+    width: 100vw;
+    line-height: 600px;
+  }
+
+  .main-container .two {
+    order: 0;
+    height: 50vh;
+    width: 100vw;
+    line-height: 300px;
+  }
+
+  .main-container .three {
+    order: 1;
+    height: 50vh;
+    width: 100vw;
+    line-height: 300px;
+  }
+}
+
+/* Anything else in between */
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+  .main-container .box-container {
+    flex-direction: column;
+  }
+
+  .main-container .one {
+    order: 1;
+    height: 100vh;
+    width: 100vw;
+    line-height: 600px;
+  }
+
+  .main-container .two {
+    order: 0;
+    height: 50vh;
+    width: 100vw;
+    line-height: 300px;
+  }
+
+  .main-container .three {
+    order: 1;
+    height: 50vh;
+    width: 100vw;
+    line-height: 300px;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-container .box-container {
+    flex-direction: column;
+  }
+
+  .main-container .one {
+    order: 1;
+    height: 100vh;
+    width: 100vw;
+    line-height: 600px;
+  }
+
+  .main-container .two {
+    order: 0;
+    height: 50vh;
+    width: 100vw;
+    line-height: 300px;
+  }
+
+  .main-container .three {
+    order: 1;
+    height: 50vh;
+    width: 100vw;
+    line-height: 300px;
+  }
+}

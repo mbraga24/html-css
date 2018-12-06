@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  background: hsl(284, 100%, 99%);
+  font-family: 'Nunito Semibold';
+  font-size: 40px;
+  text-align: center;
+}
+
+.main-container .box-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-container .one, .two, .three {
+  height: 650px;
+}
+
+.main-container .one {
+  background: hsl(225, 83%, 85%);
+  flex-grow: 3;
+}
+
+.main-container .two {
+  background: hsl(60, 100%, 85%);
+  flex-grow: 1;
+}
+
+.main-container .three {
+  background: hsl(0, 100%, 85%);
+  flex-grow: 1;
+}
+
+/* Phones */
+@media only screen and (max-width: 425px) {
+  .main-container .box-container {
+    flex-direction: column;
+  }
+
+  .main-container .one {
+    height: 100vh;
+  }
+
+  .main-container .two {
+    height: 75vh;
+  }
+
+  .main-container .three {
+    height: 25vh;
+  }
+}
+
+/* Anything in between */
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+  .main-container .box-container {
+    flex-direction: column;
+  }
+
+  .main-container .one {
+    height: 100vh;
+  }
+
+  .main-container .two {
+    height: 50vh;
+  }
+
+  .main-container .three {
+    height: 50vh;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-container .box-container {
+    flex-direction: column;
+  }
+
+  .main-container .one {
+    height: 100vh;
+  }
+
+  .main-container .two {
+    height: 50vh;
+  }
+
+  .main-container .three {
+    height: 50vh;
+  }
+}
