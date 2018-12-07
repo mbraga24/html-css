@@ -1,9 +1,9 @@
 The Ninja Net
 
 "CSS Flexbox Tutorial #2 - Flex Containers"
-"CSS Flexbox Tutorial #3 - Flex Containers"
-"CSS Flexbox Tutorial #4 - Flex Containers"
-"CSS Flexbox Tutorial #5 - Flex Containers"
-"CSS Flexbox Tutorial #6 - Flex Containers"
+"CSS Flexbox Tutorial #3 - Flex Grow"
+"CSS Flexbox Tutorial #4 - Flex Shrink"
+"CSS Flexbox Tutorial #5 - Flex Wrap"
+"CSS Flexbox Tutorial #6 - Flex Basis"
 
 https://www.youtube.com/watch?v=8Ls7maJvjwQ&index=8&list=PL4cUxeGkcC9i3FXJSUfmsNOx8E7u6UuhG
