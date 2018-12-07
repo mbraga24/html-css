@@ -1,0 +1,52 @@
+* {
+  font-family: verdana;
+  margin: 0
+}
+
+body {
+  background: hsl(0, 0%, 0%);
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-wrap: wrap-reverse; */
+}
+
+/* min-width value will limit the items to shrink less than 200px. So when the screen is resized
+it will stop shrinking at 200px and a scroll bar will show up at the bottom of the page. flex-wrap
+allows the items to wrap as the screen size decreases. */
+
+.box {
+  height: 100px;
+  /* width: 320px; */
+  /* min-width: 200px; */
+  /* flex-grow: 1; */
+  /* flex-basis: 500px; */
+  /* flex = <flex-grow> <flex-shrink> <flex-basis> */
+  flex: 1 0 200px;
+}
+
+.one {
+  background: hsl(0, 100%, 85%);
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+}
+
+.two {
+  background: hsl(225, 83%, 85%);
+  /* flex-grow: 2; */
+  /* flex-shrink: 2; */
+}
+
+.three {
+  background: hsl(91, 50%, 85%);
+  /* flex-grow: 3; */
+  /* flex-shrink: 3; */
+}
