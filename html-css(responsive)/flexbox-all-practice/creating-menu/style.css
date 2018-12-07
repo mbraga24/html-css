@@ -4,7 +4,7 @@
 }
 
 body {
-  background: hsl(0, 0%, 0%);
+  background: hsl(0, 0%, 96%);
 }
 
 .wrapper {
@@ -16,7 +16,7 @@ body {
 /* Menu base styles  */
 
 nav {
-  background: hsl(284, 100%, 99%);
+  background: hsl(0, 0%, 0%);
 }
 
 nav ul {
@@ -26,14 +26,14 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: white;
   display: block;
   padding: 10px;
   text-align: center;
 }
 
-nav a:hover {
-  background: hsl(284, 100%, 90%)
+nav ul.main-menu a:hover {
+  background: hsl(200, 10%, 60%)
 }
 
 a.tw {
@@ -63,6 +63,20 @@ nav ul.social {
 nav ul.social li {
   flex: 1 1 0;
 }
+
+article {
+  background: hsl(284, 100%, 99%);
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+article h2 {
+  font-size: 20px;
+  text-align: center;
+  margin: 10px 0;
+}
+
 /* Flex styles  */
 @media only screen and (min-width: 768px) {
   /* Flex Container */
@@ -92,5 +106,20 @@ nav ul.social li {
 
   .social {
     margin: 0;
+  }
+
+  #blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  article {
+    flex: 0 1 32%;
+    transition: flex-basis 0.2s linear;
+  }
+
+  article.stack {
+    flex: 0 1 100%;
   }
 }
