@@ -16,12 +16,13 @@ body {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+  flex-flow: column;
+  /* justify-content: center; */
+  /* justify-content: flex-end; */
+  /* justify-content: flex-start; */
   /* flex-wrap: wrap-reverse; */
+  height: 800px;
 }
-
-/* min-width value will limit the items to shrink less than 200px. So when the screen is resized
-it will stop shrinking at 200px and a scroll bar will show up at the bottom of the page. flex-wrap
-allows the items to wrap as the screen size decreases. */
 
 .box {
   height: 100px;
@@ -29,8 +30,9 @@ allows the items to wrap as the screen size decreases. */
   /* min-width: 200px; */
   /* flex-grow: 1; */
   /* flex-basis: 500px; */
-  /* flex = <flex-grow> <flex-shrink> <flex-basis> */
-  flex: 1 0 200px;
+
+  /* flex: <flex-grow> <flex-shrink> <flex-basis> */
+  flex: 0 0 100px;
 }
 
 .one {
