@@ -213,12 +213,11 @@ footer a{
 
 @media screen and (max-width: 480px) {
   #featured li{
-      width: 92%;
+      width: 90%;
+      margin: 20px 5%;
   }
   footer ul{
-    float: none;
-    padding: 10px;
-    margin: 0 auto;
+    width: 98%;
     text-align: center;
   }
 }
