@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Register Form</title>
+</head>
+<style>
+  .spacing {
+    margin: 30px;
+  }
+</style>
+<body style=" width: 100vw; height: 100vh; border: 1px dotted black;">
+    
+    <div style="text-align: left; color: purple;">
+
+      <form action="http://www.wikipedia.com">
+      <h1 class="spacing">Register</h1>
+      <div class="spacing">
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstName" placeholder="John" required>
+        <label for="secondname">Second Name:</label>
+        <input type="text" id="secondname" name="secondname" placeholder="Doe" required">
+      </div>
+      
+      <div class="spacing">
+        <label for="male">Male</label>
+        <input type="radio" name="genderChoice" id="female" value="MALE" required>
+        <label for="female">Female</label>
+        <input type="radio" name="genderChoice" id="female" value="FEMALE" required>
+        <label for="other">Other</label>
+        <input type="radio" name="genderChoice" id="other" value="OTHER" required>
+      </div>
+      
+      <div class="spacing">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="your email" required>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="your password" pattern=".{8,12}" required title="Please enter 5 to 12 characters.">
+      </div>
+      
+      <div class="spacing">
+        <label for="birthday-">Birthday:</label>
+        <select name="month" id="">
+          <option value="">Month</option>
+          <option value="1">January</option>
+          <option value="2">February</option>
+          <option value="3">March</option>
+        </select>
+        <select name="day" id="">
+          <option value="">Day</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <select name="year" id="">
+          <option value="">Year</option>
+          <option value="80s">1988</option>
+          <option value="90s">1989</option>
+          <option value="90s">1990</option>
+        </select>
+
+      </div>
+    
+      <div class="spacing">
+        <label for="agreed">I agree with the terms and conditions</label>
+        <input type="checkbox" name="agreed" id="agreed" required>
+      </div>
+
+      <div class="spacing">
+        <button>Submit</button>
+      </div>
+      </form>
+
+    </div>
+</body>
+</html>
