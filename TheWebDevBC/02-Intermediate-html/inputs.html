@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inputs</title>
+</head>
+<body>
+
+  <div style="text-align: center; color: purple;">
+    <h1>Sport Quiz</h1>
+    <h3>Choose one of your favorite sports:</h3>
+    <form action="http://www.wikipedia.com">
+      
+      <label for="soccer">Soccer</label>
+      <input type="radio" id="soccer" name="sportChoice" value="SOCCER">
+
+      <label for="basketball">Basketball</label>
+      <input type="radio" id="basketball" name="sportChoice" value="BASKETBALL">
+
+      <label for="surf">Surf</label>
+      <input type="radio" id="surf" name="sportChoice" value="SURF">
+
+      <label for="voleyball">Voleyball</label>
+      <input type="radio" id="voleyball" name="sportChoice" value="VOLEYBALL">
+
+    <h3>How often do you practice ?</h3>
+      <select name="consistency" id="">
+        <option value="1">Don't have time</option>
+        <option value="2">Seldom</option>
+        <option value="3">Sometimes</option>
+        <option value="4">Often</option>
+        <option value="5">All the time</option>
+        <option value="6">I'm a Pro</option>
+      </select>
+
+    <h3>Tell us your best experience practicing this activity:</h3>
+      <textarea name="myadventrure" cols="30" rows="20" style="color: red; font-size: 20px;"></textarea>
+
+      <button style="display: block; margin: 0 auto; height: 30px; width: 50px; border-radius: 10%;">Go</button>
+
+  </div>
+  </form>
+</body>
+</html>
