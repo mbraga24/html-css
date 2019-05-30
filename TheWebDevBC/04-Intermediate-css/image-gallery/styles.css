@@ -1,4 +1,28 @@
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  margin: 100px auto;
+}
+h1 {
+  font-size: 60px;
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+  background: rgba(241, 241, 241, 0.5);
+  /* border-bottom: 5px solid rgba(225, 230, 239, 0.5); */
+
+}
+
 img {
-  width: 100px;
+  width: 30%;
   float: left;
+  margin: 1.66%;
 }
