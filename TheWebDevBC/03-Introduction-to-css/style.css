@@ -1,0 +1,76 @@
+/*Star*/
+
+/*Descendant Selector
+li a {
+  text-decoration: none;
+}
+*/
+
+/*Adjacent Selector
+ul + p {
+   color: red;
+}
+*/
+
+/*Attribute Selector
+a[href="https://net.tutsplus.com"] {
+  color: #1f6053;
+}
+*/
+
+
+/*nth of type 
+ul:nth-of-type(3) {
+   border: 1px solid black;
+}
+*/
+
+/* X:nth-child(n) 
+li:nth-child(3) {
+   color: red;
+}
+*/
+
+/* X:first-child AND X:last-child
+li:first-child {
+    border-top: none;
+}
+ 
+li:last-child {
+   border-bottom: none;
+}
+*/
+
+/* X:last-child 
+ul > li:last-child {
+   color: green;
+}
+*/
+
+/* child combinator 
+div#container > ul {
+  border: 1px solid black;
+}*/
+
+/* :link :visited pseudo-classes 
+a:link { color: red; }
+a:visted { color: purple; }
+*/
+
+/* X:checked pseudo-class 
+input[type=radio]:checked {
+   border: 1px solid black;
+}
+*/
+
+/* X:hover pseudo-class 
+div:hover {
+  background: #e3e3e3;
+}
+*/
+
+/* X:not(selector) 
+div:not(#container) {
+   color: blue;
+}
+*/
