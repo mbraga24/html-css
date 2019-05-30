@@ -6,20 +6,25 @@ body {
   padding: 20px;
   font-family: 'Source Sans Pro', sans-serif;
 }
-
 h2 {
   color: #2c3e50;
+  font-size: 2.0rem;
   font-weight: 600;
   text-transform: capitalize;
 }
-
+.date {
+  color: #3498db;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
 .quote {
   border-left: 5px solid #bdc3c7;
   padding-left: 5px;
 }
 
-.date {
-  color: #3498db;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(165, 175, 186, 0), rgba(165, 175, 186, 0.75), rgba(165, 175, 186, 0));
+    margin: 30px 0;
 }
