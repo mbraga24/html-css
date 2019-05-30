@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <title>Bootstrap Basics</title>
+    <style media="screen">
+      .jumbotron {
+        background: #bad4ff;
+      }
+      p + .btn-warning {
+        background: #0060ff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="jumbotron">
+        <h1 class="display-4">Getting ready!</h1>
+        <p class="lead">Who moved my cheese say cheese macaroni cheese. Camembert de normandie fromage goat roquefort caerphilly goat jarlsberg everyone loves. Cheese and biscuits cheese slices gouda mascarpone cottage cheese fondue cheese strings cow. Cheesecake.</p>
+        <hr class="my-4">
+        <p>I love cheese, especially cheese and wine bocconcini. Mozzarella cream cheese caerphilly gouda emmental cheeseburger parmesan cheese and wine.</p>
+        <a class="btn btn-warning btn-lg" href="#" role="button">Learn more</a>
+      </div>
+
+      <!-- <h1>Bootstrap Basics</h1>
+      <button class="btn btn-success">Click me!</button>
+      <a class="btn btn-warning"href="#">Nope!</a>
+      <input type="text" name="" value="" class="btn btn"> -->
+
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
