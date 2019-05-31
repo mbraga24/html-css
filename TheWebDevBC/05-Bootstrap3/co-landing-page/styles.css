@@ -1,0 +1,13 @@
+body {
+  background-image: url("./images/connection-contemporary-daylight-378308.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#content {
+  text-align: center;
+  padding-top: 8%;
+  color: #e6eded;
+}
+hr {
+  width: 40%;
+}
