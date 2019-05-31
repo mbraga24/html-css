@@ -56,7 +56,7 @@ div#container > ul {
 
 /* :link :visited pseudo-classes  */
 a:link { color: red; }
-a:visted { color: purple; }
+a:visited { color: purple; }
 
 
 /* X:checked pseudo-class  */
