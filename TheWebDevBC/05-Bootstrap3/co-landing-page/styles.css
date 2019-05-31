@@ -1,12 +1,13 @@
+html {
+  height: 100%;
+}
 body {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
+  font-size: 16px;
   background-image: url("./images/connection-contemporary-daylight-378308.jpg");
   background-position: center;
   background-size: cover;
-}
-html {
-  height: 100%;
 }
 #content {
   text-align: center;
@@ -20,7 +21,7 @@ h1, h2, h3 {
   font-weight: 700;
 }
 h1 {
-  font-size: 6rem;
+  font-size: 7rem;
 }
 hr {
   width: 400px;
