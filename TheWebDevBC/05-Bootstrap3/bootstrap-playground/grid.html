@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Grid System</title>
+    <style media="screen">
+      .blue {
+        background: #3366FF;
+        color: white;
+        font-size: 25px;
+        text-align: center;
+      }
+      .header {
+        height: 150px;
+        margin-bottom: 10px;
+      }
+      .nav {
+        height: 125px;
+        border-bottom: 10px solid white;
+      }
+      .aside {
+        height: 125px;
+        margin-bottom: 10px;
+      }
+      .main {
+        height: 125px;
+        border-left: 10px solid white;
+      }
+      .section {
+        height: 200px;
+        margin-bottom: 10px;
+      }
+      .footer {
+        height: 150px;
+        margin-bottom: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 header blue">Header</div>
+      </div>
+        <div class="row">
+          <div class="col-lg-4 nav blue">Nav</div>
+          <div class="col-lg-8 main blue">Main</div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 aside blue">Aside</div>
+          <div class="col-lg-8 main blue"></div>
+        </div>
+      <div class="row">
+        <div class="col-lg-12 section blue">Section</div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 footer blue">Footer</div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
