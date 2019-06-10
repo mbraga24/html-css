@@ -1,0 +1,10 @@
+.winner {
+	color:green;
+	font-size: 80px;
+}
+
+.winnerMessage {
+	width: 200px;
+	background-color: blue;
+	color: white;
+}
