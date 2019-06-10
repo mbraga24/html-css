@@ -1,0 +1,26 @@
+html body {
+  font-size: 16px;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+ul {
+  border: 1px solid black;
+  padding: 30px;
+  font-size: 1.5rem;
+  border-radius: 15%;
+  text-shadow: 0px 4px 4px rgb(0,0,0,0.2);
+}
+#my-list li {
+  margin-bottom: 0.75rem;
+  list-style: none;
+}
+.selected {
+  text-decoration: line-through;
+  color: black;
+}
