@@ -6,7 +6,8 @@ body {
 
 #header {
   background-color: #ffffff;
-  height: 30px;
+  height: 40px;
+  width: 100%;
   /* font-size: 16px; DEFAULT PROPERTY THAT WILL BE INHERITED BY button { font-size: inherit }*/
   text-align: center;
   display: flex;
@@ -37,7 +38,8 @@ h1 {
   width: 20%;
   color: steelblue;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  margin: 5px 0;
 }
 
 .square {
@@ -53,7 +55,7 @@ h1 {
 }
 
 #container {
-  margin: 2% auto; 
+  margin: 0 auto; 
   max-width: 600px;
 }
 
@@ -73,6 +75,7 @@ button {
   color: steelblue;
   letter-spacing: 2px;
   font-size: inherit;
+  outline: none;
   transition: all 0.4s;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -83,25 +86,15 @@ button:hover {
   background-color: steelblue;
 }
 
+#display-message-footer {
+  display: none;
+}
+
 
  @media (max-width: 767.98px) { 
-  #display-color {
-    font-size: 175%;  
-  }
-  #container {
-    margin: 10% auto;
-    max-width: 550px;
-  }
+
  }
 
  @media (max-width: 576px) {
-  #display-color {
-    font-size: 150%;  
-  }
-  #container {
-    margin: 10% auto;
-    max-width: 450px;
-  }
-  #display-message {
-    width: 25%;
+
  }

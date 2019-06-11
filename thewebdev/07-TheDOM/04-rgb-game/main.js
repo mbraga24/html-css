@@ -2,7 +2,7 @@ let numSquares = 6;
 let colors = generateRandomColors(numSquares);
 let squares = document.querySelectorAll(".square");
 let displayColor = document.getElementById("display-color");
-let messageDisp = document.querySelector("#display-message");
+let messageTop = document.querySelector("#display-message");
 let h1 = document.querySelector("h1");
 let header = document.querySelector("#header");
 let resetButton = document.querySelector("#reset");
@@ -40,19 +40,23 @@ hardBtn.addEventListener("click", function() {
 });
 
 resetButton.addEventListener("click", function() {
-  resetButton.textContent = "Reset";
+  // Reset the text on the resetButtons.
+  this.textContent = "New Colors";
+  // Change displayColor to match picked color.
+  displayColor.textContent = pickedColor;
+  // Set the message in the top to an empty string.
+  messageTop.textContent = "";
+  // Set color of h1 to default color when game is reset. 
+  h1.style.backgroundColor = "steelblue";
   // Generate all new colors.
   colors = generateRandomColors(numSquares);
   // Pick a new random color from array.
   pickedColor = pickRandomColor();
-  // Change displayColor to match picked color.
-  displayColor.textContent = pickedColor;
+  
   // Change colors of squares.
   for(let i = 0; i < squares.length; i++) {
     squares[i].style.backgroundColor = colors[i];
   }
-  messageDisp.textContent = "" 
-  h1.style.backgroundColor = "steelblue";
 })
 
 displayColor.textContent = pickedColor;
@@ -70,14 +74,14 @@ for(let i = 0; i < squares.length; i++) {
     // pickedColor variable.
     if (clickedColor === pickedColor) {
       // Player wins.
-      messageDisp.textContent = "You got it !!"
+      messageTop.textContent = "You got it !!";
       h1.style.backgroundColor = clickedColor;
       changeSquareColors(clickedColor);
-      resetButton.textContent = "Play Again?"
+      resetButton.textContent = "Play Again?";
       // Player guesses wrong.
     } else {
       this.style.backgroundColor = "#232323";
-      messageDisp.textContent = "Try again!"
+      messageTop.textContent = "Try again!";
     }
   })
 }
