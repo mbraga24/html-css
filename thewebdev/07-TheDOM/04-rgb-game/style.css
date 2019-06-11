@@ -1,0 +1,33 @@
+body {
+  background-color: #232323;
+}
+
+#header {
+  background-color: #ffffff;
+  height: 30px;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.square {
+  width: 30%;
+  background-color: #B2DDFF;
+  padding-bottom: 30%;
+  float: left;
+  margin: 1.666%;
+}
+
+#container {
+  margin: 0 auto; 
+  max-width: 600px;
+}
+
+.selected {
+  background-color: blueviolet;
+  color: whitesmoke;
+  font-weight: 800;
+}
