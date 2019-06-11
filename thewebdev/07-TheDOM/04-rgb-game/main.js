@@ -1,13 +1,13 @@
 let numSquares = 6;
 let colors = generateRandomColors(numSquares);
 let squares = document.querySelectorAll(".square");
-let displayColor = document.getElementById("displayColor");
-let messageDisp = document.querySelector("#messageDisp");
+let displayColor = document.getElementById("display-color");
+let messageDisp = document.querySelector("#display-message");
 let h1 = document.querySelector("h1");
 let header = document.querySelector("#header");
 let resetButton = document.querySelector("#reset");
-let easyBtn = document.querySelector("#easyBtn");
-let hardBtn = document.querySelector("#hardBtn");
+let easyBtn = document.querySelector("#easy-btn");
+let hardBtn = document.querySelector("#hard-btn");
 let pickedColor = pickRandomColor();
 
 easyBtn.addEventListener("click", function() {
@@ -52,7 +52,7 @@ resetButton.addEventListener("click", function() {
     squares[i].style.backgroundColor = colors[i];
   }
   messageDisp.textContent = "" 
-  h1.style.backgroundColor = "#232323";
+  h1.style.backgroundColor = "steelblue";
 })
 
 displayColor.textContent = pickedColor;
@@ -63,7 +63,6 @@ for(let i = 0; i < squares.length; i++) {
 
   // Add events to squares
   squares[i].addEventListener("click", function() {
-    // alert(this.style.backgroundColor);
     // Store clicked color to a variable
     let clickedColor =  this.style.backgroundColor;
 
