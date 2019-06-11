@@ -14,9 +14,30 @@ for(let i = 0; i < modeButtons.length; i++) {
     modeButtons[0].classList.remove("selected");
     modeButtons[1].classList.remove("selected");
     this.classList.add("selected");
+    
+    reset()
   });
 }
 
+function reset() {
+  // Reset the text on the resetButtons.
+  resetButton.textContent = "New Colors";
+  // Change displayColor to match picked color.
+  displayColor.textContent = pickedColor;
+  // Set the message in the top to an empty string.
+  messageTop.textContent = "";
+  // Set color of h1 to default color when game is reset. 
+  h1.style.backgroundColor = "steelblue";
+  // Generate all new colors.
+  colors = generateRandomColors(numSquares);
+  // Pick a new random color from array.
+  pickedColor = pickRandomColor();
+  
+  // Change colors of squares.
+  for(let i = 0; i < squares.length; i++) {
+    squares[i].style.backgroundColor = colors[i];
+  }
+}
 // easyBtn.addEventListener("click", function() {
 //   this.classList.add("selected");
 //   hardBtn.classList.remove("selected");
@@ -47,23 +68,7 @@ for(let i = 0; i < modeButtons.length; i++) {
 // });
 
 resetButton.addEventListener("click", function() {
-  // Reset the text on the resetButtons.
-  this.textContent = "New Colors";
-  // Change displayColor to match picked color.
-  displayColor.textContent = pickedColor;
-  // Set the message in the top to an empty string.
-  messageTop.textContent = "";
-  // Set color of h1 to default color when game is reset. 
-  h1.style.backgroundColor = "steelblue";
-  // Generate all new colors.
-  colors = generateRandomColors(numSquares);
-  // Pick a new random color from array.
-  pickedColor = pickRandomColor();
-  
-  // Change colors of squares.
-  for(let i = 0; i < squares.length; i++) {
-    squares[i].style.backgroundColor = colors[i];
-  }
+  reset();
 })
 
 displayColor.textContent = pickedColor;
