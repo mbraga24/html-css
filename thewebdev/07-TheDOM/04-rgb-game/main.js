@@ -6,38 +6,45 @@ let messageTop = document.querySelector("#display-message");
 let h1 = document.querySelector("h1");
 let header = document.querySelector("#header");
 let resetButton = document.querySelector("#reset");
-let easyBtn = document.querySelector("#easy-btn");
-let hardBtn = document.querySelector("#hard-btn");
+let modeButtons = document.querySelectorAll(".mode");
 let pickedColor = pickRandomColor();
 
-easyBtn.addEventListener("click", function() {
-  this.classList.add("selected");
-  hardBtn.classList.remove("selected");
-  numSquares = 3;
-  colors = generateRandomColors(numSquares);
-  pickedColor = pickRandomColor();
-  displayColor.textContent = pickedColor;
-  for(let i = 0; i < squares.length; i++) {
-    if (colors[i]) {
-      squares[i].style.backgroundColor = colors[i]
-    } else {
-      squares[i].style.display = "none";
-    }
-  }
-});
+for(let i = 0; i < modeButtons.length; i++) {
+  modeButtons[i].addEventListener("click", function() {
+    modeButtons[0].classList.remove("selected");
+    modeButtons[1].classList.remove("selected");
+    this.classList.add("selected");
+  });
+}
 
-hardBtn.addEventListener("click", function() {
-  this.classList.add("selected");
-  easyBtn.classList.remove("selected");
-  numSquares = 6;
-  colors = generateRandomColors(numSquares);
-  pickedColor = pickRandomColor();
-  displayColor.textContent = pickedColor;
-  for(let i = 0; i < squares.length; i++) {
-    squares[i].style.backgroundColor = colors[i];
-    squares[i].style.display = "block";
-  }
-});
+// easyBtn.addEventListener("click", function() {
+//   this.classList.add("selected");
+//   hardBtn.classList.remove("selected");
+//   numSquares = 3;
+//   colors = generateRandomColors(numSquares);
+//   pickedColor = pickRandomColor();
+//   displayColor.textContent = pickedColor;
+//   for(let i = 0; i < squares.length; i++) {
+//     if (colors[i]) {
+//       squares[i].style.backgroundColor = colors[i]
+//     } else {
+//       squares[i].style.display = "none";
+//     }
+//   }
+// });
+
+// hardBtn.addEventListener("click", function() {
+//   this.classList.add("selected");
+//   easyBtn.classList.remove("selected");
+//   numSquares = 6;
+//   colors = generateRandomColors(numSquares);
+//   pickedColor = pickRandomColor();
+//   displayColor.textContent = pickedColor;
+//   for(let i = 0; i < squares.length; i++) {
+//     squares[i].style.backgroundColor = colors[i];
+//     squares[i].style.display = "block";
+//   }
+// });
 
 resetButton.addEventListener("click", function() {
   // Reset the text on the resetButtons.
