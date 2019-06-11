@@ -16,12 +16,6 @@ for(let i = 0; i < modeButtons.length; i++) {
     this.classList.add("selected");
     // Ternary Operator
     this.textContent === "Easy" ? numSquares = 3 : numSquares = 6;
-    // Traditional if/else conditional statement
-    // if (this.textContent === "Easy") {
-    //   numSquares = 3;
-    // } else {
-    //   numSquares = 6;
-    // }
     reset()
   });
 }
@@ -43,36 +37,14 @@ function reset() {
   // Change colors of squares.
   for(let i = 0; i < squares.length; i++) {
     squares[i].style.backgroundColor = colors[i];
+    if (!colors[i]) {
+      squares[i].style.display = "none"
+    } else {
+      squares[i].style.display = "block"
+    }
   }
+    
 }
-// easyBtn.addEventListener("click", function() {
-//   this.classList.add("selected");
-//   hardBtn.classList.remove("selected");
-//   numSquares = 3;
-//   colors = generateRandomColors(numSquares);
-//   pickedColor = pickRandomColor();
-//   displayColor.textContent = pickedColor;
-//   for(let i = 0; i < squares.length; i++) {
-//     if (colors[i]) {
-//       squares[i].style.backgroundColor = colors[i]
-//     } else {
-//       squares[i].style.display = "none";
-//     }
-//   }
-// });
-
-// hardBtn.addEventListener("click", function() {
-//   this.classList.add("selected");
-//   easyBtn.classList.remove("selected");
-//   numSquares = 6;
-//   colors = generateRandomColors(numSquares);
-//   pickedColor = pickRandomColor();
-//   displayColor.textContent = pickedColor;
-//   for(let i = 0; i < squares.length; i++) {
-//     squares[i].style.backgroundColor = colors[i];
-//     squares[i].style.display = "block";
-//   }
-// });
 
 resetButton.addEventListener("click", function() {
   reset();
