@@ -1,6 +1,6 @@
-let numSquares = 6;
-let colors = generateRandomColors(numSquares);
-let squares = document.querySelectorAll(".square");
+let numCircles = 6;
+let colors = generateRandomColors(numCircles);
+let circles = document.querySelectorAll(".circle");
 let displayColor = document.getElementById("display-color");
 let messageTop = document.querySelector("#display-message");
 let h1 = document.querySelector("h1");
@@ -9,15 +9,45 @@ let resetButton = document.querySelector("#reset");
 let modeButtons = document.querySelectorAll(".mode");
 let pickedColor = pickRandomColor();
 
-for(let i = 0; i < modeButtons.length; i++) {
-  modeButtons[i].addEventListener("click", function() {
-    modeButtons[0].classList.remove("selected");
-    modeButtons[1].classList.remove("selected");
-    this.classList.add("selected");
-    // Ternary Operator
-    this.textContent === "Easy" ? numSquares = 3 : numSquares = 6;
-    reset()
-  });
+init();
+
+function init() {
+  // Buttons event listeners.
+  for(let i = 0; i < modeButtons.length; i++) {
+    modeButtons[i].addEventListener("click", function() {
+      modeButtons[0].classList.remove("selected");
+      modeButtons[1].classList.remove("selected");
+      this.classList.add("selected");
+      // Ternary Operator
+      this.textContent === "Easy" ? numCircles = 3 : numCircles = 6;
+      reset()
+    });
+  }
+
+  // Circles event listeners.
+  for(let i = 0; i < circles.length; i++) {
+    // Add colors to circles
+    circles[i].style.backgroundColor = colors[i];
+    // Add events to circles
+    circles[i].addEventListener("click", function() {
+      // Store clicked color to a variable
+      let clickedColor =  this.style.backgroundColor; 
+      // Compare clicked color to the color of 
+      // pickedColor variable.
+      if (clickedColor === pickedColor) {
+        // Player wins.
+        messageTop.textContent = "You got it !!";
+        h1.style.backgroundColor = clickedColor;
+        changeCircleColors(clickedColor);
+        resetButton.textContent = "Play Again?";
+        // Player guesses wrong.
+      } else {
+        this.style.backgroundColor = "#232323";
+        messageTop.textContent = "Try again!";
+      }
+    })
+  }
+
 }
 
 function reset() {
@@ -30,17 +60,17 @@ function reset() {
   // Set color of h1 to default color when game is reset. 
   h1.style.backgroundColor = "steelblue";
   // Generate all new colors.
-  colors = generateRandomColors(numSquares);
+  colors = generateRandomColors(numCircles);
   // Pick a new random color from array.
   pickedColor = pickRandomColor();
   
-  // Change colors of squares.
-  for(let i = 0; i < squares.length; i++) {
-    squares[i].style.backgroundColor = colors[i];
+  // Change colors of circles.
+  for(let i = 0; i < circles.length; i++) {
+    circles[i].style.backgroundColor = colors[i];
     if (!colors[i]) {
-      squares[i].style.display = "none"
+      circles[i].style.display = "none"
     } else {
-      squares[i].style.display = "block"
+      circles[i].style.display = "block"
     }
   }
     
@@ -52,35 +82,10 @@ resetButton.addEventListener("click", function() {
 
 displayColor.textContent = pickedColor;
 
-for(let i = 0; i < squares.length; i++) {
-  // Add colors to squares
-  squares[i].style.backgroundColor = colors[i];
-
-  // Add events to squares
-  squares[i].addEventListener("click", function() {
-    // Store clicked color to a variable
-    let clickedColor =  this.style.backgroundColor;
-
-    // Compare clicked color to the color of 
-    // pickedColor variable.
-    if (clickedColor === pickedColor) {
-      // Player wins.
-      messageTop.textContent = "You got it !!";
-      h1.style.backgroundColor = clickedColor;
-      changeSquareColors(clickedColor);
-      resetButton.textContent = "Play Again?";
-      // Player guesses wrong.
-    } else {
-      this.style.backgroundColor = "#232323";
-      messageTop.textContent = "Try again!";
-    }
-  })
-}
-
-// Chnages all the squares to the same color when player wins.
-function changeSquareColors(color) {
+// Chnages all the circles to the same color when player wins.
+function changeCircleColors(color) {
   for(let i = 0; i < colors.length; i++) {
-    squares[i].style.backgroundColor = color;
+    circles[i].style.backgroundColor = color;
   }
 }
 
