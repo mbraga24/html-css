@@ -12,7 +12,12 @@ let modeButtons = document.querySelectorAll(".mode");
 init();
 
 function init() {
-  // Mode event listeners
+  setupModeListeners();
+  setupCircleListeners();
+  reset();  
+}
+
+function setupModeListeners() {
   for(let i = 0; i < modeButtons.length; i++) {
     modeButtons[i].addEventListener("click", function() {
       modeButtons[0].classList.remove("selected");
@@ -23,7 +28,9 @@ function init() {
       reset()
     });
   }
-  // Circle event listeners
+}
+
+function setupCircleListeners() {
   for(let i = 0; i < circles.length; i++) {
     // Add colors to circles
     circles[i].style.backgroundColor = colors[i];
@@ -46,8 +53,6 @@ function init() {
       }
     })
   }
-  reset();
-  
 }
 
 function reset() {
